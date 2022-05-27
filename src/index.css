@@ -11,3 +11,7 @@
     --blue: #1AA7EC;
     --cyan: #7DD6F6;
 }
+
+* {
+    font-family: 'Manrope';
+}
