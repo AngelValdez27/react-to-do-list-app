@@ -5,7 +5,7 @@ import { UserCircleIcon, MailIcon, KeyIcon } from '@heroicons/react/outline'
 import AuthNavigationButton from '../../AuthNavigationButton/AuthNavigationButton';
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
-import getBase64 from '../../../utils/tools';
+import utils from '../../../utils/tools';
 
 function Form() {
 
@@ -13,7 +13,7 @@ function Form() {
   const [image, setImage] = useState(profilePhotoIcon);
   const handleInputImage = (e) => {
     let file = e.target.files[0];
-    getBase64(file, (result) => {
+    utils.getBase64(file, (result) => {
       setImage(result);
     });    
   }

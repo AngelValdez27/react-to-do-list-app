@@ -14,7 +14,7 @@ function Dropdown() {
             </button>
             {
                 isOpen &&
-                <div className='bg-white rounded-md shadow-lg'>
+                <div className='bg-white rounded-md shadow-lg absolute'>
                     <Link to='/profile' className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'>Profile</Link>
                     <Link to='/profile' className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'>Groups</Link>
                 </div>
